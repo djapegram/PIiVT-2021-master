@@ -137,9 +137,9 @@ CREATE TABLE IF NOT EXISTS `category` (
 DELETE FROM `category`;
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
 INSERT INTO `category` (`category_id`, `name`, `description`, `image_path`) VALUES
-	(1, 'kategorija1', 'das kategorija', 'dsajhkdsaj'),
-	(4, 'kategorija2', 'druga kategorija', '/'),
-	(5, 'qwesasasart', 'dsadsa', 'ksaksa.jpg'),
+	(1, 'cinije', 'das kategorija', 'dsajhkdsaj'),
+	(4, 'flase', 'druga kategorija', '/'),
+	(5, 'dozeri', 'dsadsa', 'ksaksa.jpg'),
 	(7, 'dasd', 'mafdasdasadsd', 'dsadsa.png'),
 	(9, 'ddasasd', 'mafdaasadsd', 'dsadsa.jpg'),
 	(11, 'dda1sd', 'mafdaasadsd', 'dsasa.jpg');
@@ -242,7 +242,8 @@ DELETE FROM `profile`;
 /*!40000 ALTER TABLE `profile` DISABLE KEYS */;
 INSERT INTO `profile` (`profile_id`, `name`, `description`, `price_per_unit_area`, `manufacturer_id`, `category_id`, `status`, `created_at`) VALUES
 	(1, 'Dozer za sapun', 'Matirani dozeri za sapun', 200.00, 1, 1, 'available', '2021-07-22 20:09:22'),
-	(3, 'Plasticna flasica', 'Plasticne flasice spremne za brendiranje', 1500.98, 3, 1, 'available', '2021-07-22 20:10:50'),
+  (2, 'Flasica za trening', 'Plasticna flasica za trening', 200.00, 1, 1, 'available', '2021-07-22 20:09:22'),
+	(3, 'Plasticna flasica', 'Plasticne flasice spremne za brendiranje', 1500.98, 3, 2, 'available', '2021-07-22 20:10:50'),
 	(4, 'Template proizvoda', 'Ovaj prozivod koristite kao template za kreiranje proizvoda', 5000.00, 3, 1, 'hidden', '2021-08-13 17:39:09');
 /*!40000 ALTER TABLE `profile` ENABLE KEYS */;
 
